@@ -1,56 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>listado de casillero disponibles</h1>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva de Casilleros</title>
+    <link rel="stylesheet" href="locker.css" />
+  </head>
+  <body>
+    <nav>
+        <div class="logo-nav">
+          <img
+            src="https://raw.githubusercontent.com/EASCOL/EAS/HI005/HI005/logo.png"
+            alt="EAS LOGO"
+            class="logo"
+          />
+          <p>EAFIT Administration System</p>
+        </div>
+      </nav>
+    <h1 class="section-title">Listado de Casilleros disponibles</h1>
     <section id="bloques">
-        <article class="bloque">
-            <h4>Bloque 23</h4>
-            <p>Actualmente hay 20/20 casilleros disponibles</p>
-        </article>
-        <article class="bloque">
-            <h4>Bloque 24</h4>
-            <p>Actualmente hay 15/20 casilleros disponibles</p>
-        </article>
-        <article class="bloque">
-            <h4>Bloque 25</h4>
-            <p>Actualmente hay 10/20 casilleros disponibles</p>
-        </article class="bloque">
-        <article>
-            <h4>Bloque 26</h4>
-            <p>Actualmente hay 12/20 casilleros disponibles</p>
-        </article>
+      <article class="bloque">
+        <img
+          src="https://thumbs.dreamstime.com/b/d-rendering-architectural-blocks-empty-room-grid-texture-black-white-abstract-minimal-background-d-render-architectural-141798661.jpg"
+          alt="Foto de bloque"
+        />
+        <div class="bloque-info">
+          <h4>Bloque 23</h4>
+          <p>Actualmente hay 15/20 casilleros disponibles</p>
+        </div>
+      </article>
+      <article class="bloque">
+        <img
+          src="https://thumbs.dreamstime.com/b/d-rendering-architectural-blocks-empty-room-grid-texture-black-white-abstract-minimal-background-d-render-architectural-141798661.jpg"
+          alt="Foto de bloque"
+        />
+        <div class="bloque-info">
+          <h4>Bloque 23</h4>
+          <p>Actualmente hay 15/20 casilleros disponibles</p>
+        </div>
+      </article>
+      <article class="bloque">
+        <img
+          src="https://thumbs.dreamstime.com/b/d-rendering-architectural-blocks-empty-room-grid-texture-black-white-abstract-minimal-background-d-render-architectural-141798661.jpg"
+          alt="Foto de bloque"
+        />
+        <div class="bloque-info">
+          <h4>Bloque 23</h4>
+          <p>Actualmente hay 15/20 casilleros disponibles</p>
+        </div>
+      </article>
+      <article class="bloque">
+        <img
+          src="https://thumbs.dreamstime.com/b/d-rendering-architectural-blocks-empty-room-grid-texture-black-white-abstract-minimal-background-d-render-architectural-141798661.jpg"
+          alt="Foto de bloque"
+        />
+        <div class="bloque-info">
+          <h4>Bloque 23</h4>
+          <p>Actualmente hay 15/20 casilleros disponibles</p>
+        </div>
+      </article>
+      <article class="bloque">
+        <img
+          src="https://thumbs.dreamstime.com/b/d-rendering-architectural-blocks-empty-room-grid-texture-black-white-abstract-minimal-background-d-render-architectural-141798661.jpg"
+          alt="Foto de bloque"
+        />
+        <div class="bloque-info">
+          <h4>Bloque 23</h4>
+          <p>Actualmente hay 15/20 casilleros disponibles</p>
+        </div>
+      </article>
     </section>
 
-    <!-- Separacion de datos - la visibilidad de ambas secciones no debe ser concurrente-->
+    <!-- Separación de datos - La visibilidad de ambas secciones no debe ser concurrente  -->
 
-    <h2>Listado de casilleros para el bloque 23</h2>
+    <h2 class="section-title">Listado de casilleros para el bloque 23:</h2>
     <section id="listado">
-        <article class="item-listado">
-            <h4>8</h4>
-            <p>Estado: Disponible</p>
-        </article>
-        <article class="item-listado">
-            <h4>10</h4>
-            <p>Estado: Libre</p>
-        </article>
-        <article class="item-listado">
-            <h4>9</h4>
-            <p>Estado: Ocupado</p>
-        </article>
-        <article class="item-listado">
-            <h4>1</h4>
-            <p>Estado: No disponible</p>
-        </article>
-        <article class="item-listado">
-            <h4>5</h4>
-            <p>Estado: Libre</p>
-        </article>
+      <article class="item-listado">
+        <div class="item-block">
+          <p>23</p>
+        </div>
+        <div class="item-info">
+          <h4>Casillero 201</h4>
+          <p class="item-info-small">
+            Estado: <span class="available">Disponible</span>
+          </p>
+        </div>
+      </article>
+      <article class="item-listado">
+        <div class="item-block">
+          <p>23</p>
+        </div>
+        <div class="item-info">
+          <h4>Casillero 202</h4>
+          <p class="item-info-small">
+            Estado: <span class="occupied">Ocupado</span>
+          </p>
+        </div>
+      </article>
+      <article class="item-listado">
+        <div class="item-block">
+          <p>23</p>
+        </div>
+        <div class="item-info">
+          <h4>Casillero 203</h4>
+          <p class="item-info-small">
+            Estado: <span class="unavailable">No disponible</span>
+          </p>
+        </div>
+      </article>
     </section>
-</body>
+  </body>
 </html>
