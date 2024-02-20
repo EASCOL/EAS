@@ -5,5 +5,4 @@ The main purpose of this system is for students and administrators to be able to
 ### Its main features include:
 - Reserve lockers and classrooms
 - Check availability of lockers and schedule management for classrooms reservations.
-- Live support for possible questions when using this system.
 - EAFIT staff can manage and administrate students’ reservations.
