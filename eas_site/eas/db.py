@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+from bson.objectid import ObjectId
 
 class Database:
     client = MongoClient("localhost", 27017)
@@ -16,6 +17,15 @@ class Database:
             raise Exception("No data has been passed for inserting!")
 
         collection = Database.db[f"{coll}"]
-        insertion_id = collection.insert_one(data).inserted_id
+
+        insertion_id = collection.insert_many(data).inserted_id
 
         return insertion_id
+
+    def update_data(coll, id, data):
+        collection = Database.db[f"{coll}"]
+        collection.update_one({"_id":  ObjectId(id)}, {
+            "$set": data
+        })
+
+        return "Success"

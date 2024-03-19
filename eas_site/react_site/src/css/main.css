@@ -1,0 +1,49 @@
+/*Definición de variables*/
+:root {
+  --white: rgba(255, 255, 255, 0.7);
+  --dark: #414141;
+  --available-color: #07f371;
+  --occupied-color: #ebde6a;
+  --unavailable-color: #cf2929;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto flex", sans-serif;
+}
+
+/* Estilos generales */
+body {
+  background: #24306e;
+  height: 100vh;
+  color: var(--white);
+}
+
+nav {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo-nav {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo-nav p {
+  font-weight: bolder;
+}
+
+nav img {
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+nav .nav-options a {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 20px;
+}

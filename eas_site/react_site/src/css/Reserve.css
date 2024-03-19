@@ -1,0 +1,83 @@
+:root {
+  --input-box-shadow: 0 3px 0px #00000025;
+}
+
+.reservation-window {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffffea;
+  color: var(--dark);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 15px 5px #00000031;
+}
+
+.reservation-info {
+  text-align: center;
+}
+
+.reservation-title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.reservation-info p {
+  display: inline-block;
+  margin: 30px 20px;
+  font-size: 20px;
+}
+
+.reservation-window form label {
+  font-weight: 500;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.form-section {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.reservation-window form .form-section:nth-child(-n + 2) {
+  align-items: center;
+}
+
+.reservation-window form input {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: var(--input-box-shadow);
+  text-align: center;
+}
+
+.reservation-window #reservation-start-hour,
+#reservation-final-hour {
+  margin-right: 20px;
+}
+
+#reservation-motive {
+  border: none;
+  resize: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: var(--input-box-shadow);
+  width: 70%;
+  padding: 20px;
+}
+
+.submit-section {
+    text-align: center;
+}
+
+.submit-section button {
+  background-color: #1c2553;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  margin: 0 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: var(--input-box-shadow);
+}

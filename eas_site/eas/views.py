@@ -10,25 +10,32 @@ from rest_framework.parsers import JSONParser
 def index(request):
     return Response({"message": "Hello world!"})
 
-# @api_view(['GET'])
-# def put(request):
-#     insertion_id = Database.insert_data("lockers", {
-#         "locker_number": 4,
-#         "block": 16
-#     })
-
-#     return Response({"insertion_id": f"{insertion_id}"})
-
 @api_view(['POST'])
 @parser_classes([JSONParser])
 def get(request):
+    if request.method != "POST":
+        return Response({})
 
+    request_params = loads(request.body)
+
+    if not request_params["collection"]:
+        return Response({})
+
+    elements = [data for data in Database.get_data(request_params["collection"])]
+
+    return Response({"data": dumps(elements)})
+
+@api_view(['POST'])
+@parser_classes([JSONParser])
+def update(request):
     if request.method != "POST":
         return Response({})
     
     request_params = loads(request.body)
 
-    lockers = [locker for locker in Database.get_data(request_params["collection"])]
+    if not request_params["collection"] or not request_params["id"] or not request_params["update"]:
+        return Response({})
 
-    return Response({"data": dumps(lockers)})
+    Database.update_data(request_params["collection"], request_params["id"], request_params["update"])
 
+    return Response("Success");
